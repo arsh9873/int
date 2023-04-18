@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            font-size:rem;
+            background-color: red;
+        }
+        .box2{
+            background-color: aqua;
+            width: 50vw;
+            height: 50vh;
+        }
+        /* em makes the child font size equal to parent font size */
+        /* rem make the child font size equal to root font size */
+
+        /* vw unit relative to 1% viewport width */
+        /* vh unit relative to 1% viewport height */
+        /* viewport=screen of the device from which user access the site */
+
+        /* %=unit relative to parent element */
+    </style>
+</head>
+
+<body>
+    <!-- pixels are relative to the viewing decive and depend on the device's resolution -->
+    <!-- using relative lengths are better as they are relative to some other lenght property -->
+    <!-- using this vh and vw with fonts will cause the fonts to be resposive as well -->
+    <div class="container">
+        <p>this is a container</p>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quia reprehenderit minus sapiente minima
+            laborum maxime dicta a illum, suscipit tempore quam eligendi amet! Enim porro quos ipsa error laboriosam ad
+            debitis velit deserunt?
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad enim voluptatum?
+        </div>
+    </div>
+</body>
+
+</html>

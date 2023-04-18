@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pos practice</title>
+    <style>
+        .parent{
+            background-color: lightblue;
+            height: 50vh;
+            width: 90vw;
+            font-size:50px;
+        }
+        .child-one{
+            background-color: lightgreen;
+            width: 90%;
+        }
+        .child-two{
+            background-color: orange;
+            width: 90%;
+        }
+        .child-three{
+            background-color: lightpink;
+            width: 90%;
+        }
+    </style>
+    <link rel="stylesheet" href="pstyle.css">
+</head>
+<body>
+    <!-- 
+        static:just how it works normally,stuff comes after one other normally,is defualt. you can not have anything positioned relatively or absolutely
+                to a static element(as seen in case of static parents and relative/absolute children)
+        relative:acts almost like static but allows 4 extra things:chang top,right,bottom,left of element, these change the position of the 
+                element relative to where it would be if it was static insted, can overflow onto other elements
+                ,because of this its never actually used to do these 4 things. "relativiely position something to itself"
+        absolute:completetly takes the element out of the DOM and causes other elements to behave as if that element never existed,positions an element
+                inside of some parent element that it can reference(that is not static). If we want something positioned absolute to a parent, make sure 
+                that parent is not static
+        fixed:kind of like absolute but entirely ignore any parents(doesnt matter if relative) and position themselves relative to the whole html page,
+                stay in the same place when you scroll!
+        sticky:kind of like relative+fixed, so wont be removed from dom but will becom fixed when you scroll, really good for navbar, when not scrolling
+                will act like a normal relative element, The values for top, right, bottom, left become active when scrolled, if however these values are not
+                applied then it will be scrolled away
+                
+     -->
+     <!-- static is the default position, top/bottom nothing has effect -->
+    <!-- relative, the top/botoom/left/right/z will work,otherwise the element is in the flow,rest elements stay same 
+    they remain unaffected by the movement and may get covered,relative as in relative to where it was
+    absolute:element is removed from flow and positioned relative to its first non static parent member(this may end up being html, now top and
+    bottom might work according to the whole html page), doing this will cause later elements to act like this element was not there in the first place
+    fixed:positioning will now be relative to the browser window,put this element inside a very big window which is scrollable, it wont move.(can be used for a chat with us prompt at the bottom of screen)
+    sticky:The element will scroll along with its container, until it is at the top of the container (or reaches the offset specified in top), and will then stop scrolling, so it stays visible.(can be used to keep the navbar up)
+        when using stick you have to specify some property like top etc which says where the element will be when you move down
+        if you dont do this the element will be scrolled away. Sticky will keep the element on top always.
+    zindex:scrolling the page will keep the navbar on top but the rest of the elements may start to come on top of navbar
+    ,z index solves this, whichever element has the highest z index is always on top. It only works if the position of the element to which you apply z-index is relative, otherwise has no effect
+
+    An element with relative positioning will always scroll over an element without relative(doesnt matter if sticky navbar)
+    -->
+    <div class="parent">
+        parent
+        <div class="child-one child">One</div>
+        <div class="child-two child">Two</div>
+        <div class="child-three child">Third</div>
+    </div>
+</body>
+</html>

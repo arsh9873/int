@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .box1{
+            height: 234px;
+            width: 300px;
+            background-color: blue;
+            float:right;
+            clear:left;
+            /* this line wont work for box red as red is after blue  */
+        }
+        .box2{
+            height: 234px;
+            width: 300px;
+            background-color: red;
+            /* position:absolute;
+            right:0px; */
+            float:left;
+            /* clear:right; */
+            /* this means no element will float on the right of me,can still float in left */
+            clear:both;
+            /* no element can float on left AND right */
+        }
+    </style>
+    <!-- float can move stuff left right and efficiently using space -->
+    <!-- clear decides what elements can float besides a given element,clears those elements which are before it in the flow
+    order  -->
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+</body>
+</html>

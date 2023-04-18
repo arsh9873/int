@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footballshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background: url('pitch.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            border: 3px solid gold;
+            border-top: 0;
+            border-right: 3px;
+            position:sticky;
+            top:0px;
+            z-index:1;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: gold;
+            font-size: 30px;
+            /* background-color: black; */
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 0px 20px;
+            width: 22%;
+            /* background-color: black; */
+        }
+
+        footer {
+            color: rgb(0, 188, 154);
+            background-color: rgba(44, 63, 98, 0.864);
+            height: 50px;
+            text-align: center;
+            font-size: smaller;
+            text-decoration: underline dashed;
+            margin-top: 100%;
+            position: sticky;
+            bottom:0px;
+        }
+
+        .coolfont {
+            font-family: ubuntu;
+            color: black;
+            display: inline-block;
+        }
+
+        #messipicbg {
+            background-color: white;
+            display: inline-block;
+            height: 500px;
+            width: 500px;
+            margin-left: 191px;
+            margin-top: 79px;
+            border:2px solid gold;
+            background-image: url('messi.jpg');
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15%;
+        }
+        #messipicbg:hover{
+            opacity: 1;
+            position: relative;
+            bottom:5px;
+        }
+        #cr7picbg {
+
+            background-color: white;
+            display: inline-block;
+            height: 500px;
+            width: 500px;
+            margin-left: 191px;
+            margin-top: 79px;
+            border:2px solid gold;
+            background-image: url('ronaldo.jpg');
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15%;
+        }
+        #cr7picbg:hover{
+            opacity: 1;
+            position: relative;
+            bottom:5px;
+        }
+        .messitext{
+            /* margin-top:50%; */
+            color:black;
+            font-size: 40px;
+            /* width:50%; */
+            display:inline-block;
+            margin-left:25%;
+            margin-top:50%;
+            background-color:gold;
+            border-radius: 25%;
+            /* background-image: url("black.jpg"); */
+            /* opacity: 0.8; */
+        }
+        .cr7text{
+            /* margin-top:50%; */
+            color:black;
+            font-size: 40px;
+            /* width:50%; */
+            display:inline-block;
+            margin-left:25%;
+            margin-top:50%;
+            background-color:gold;
+            border-radius: 25%;
+            /* background-image: url("black.jpg"); */
+            /* opacity: 0.8; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div id="messipicbg">
+        <p class="coolfont messitext">latest products</p>
+    </div>
+    <div id="cr7picbg">
+        <p class="coolfont cr7text">luxury collection</p>
+    </div>
+    
+    <footer>
+        <h2>copyright MajorSports&copy;</h2>
+    </footer>
+</body>
+
+</html>

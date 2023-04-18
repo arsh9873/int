@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline;
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+            /* position: sticky; */
+            top:0px;
+            z-index: 1;
+        }
+        p{
+            text-align: center;
+            border:2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            width:50vw;
+            height: 800vh;
+            /* margin:auto; */
+            /* position:relative; */
+        }
+        .box{
+            height:200px;
+            width: 200px;
+            background-color: chartreuse;
+            /* position:relative; */
+            /* position:absolute;   */
+            /* position:sticky; */
+            /* float: right; */
+        }
+        .box2{
+            /* here box2 parent is container, which is non-static so now box2 will move according to container */
+            height:200px;
+            width: 200px;
+            background-color: purple;
+            /* position:absolute; */
+            /* left:50%;     */
+            /* float:left; */
+        }
+        .box3{
+            height:200px;
+            width: 200px;
+            background-color: orange;
+            /* position:fixed; */
+            /* right:0; */
+            
+        }
+    </style>
+    <!-- static is the default position, top/bottom nothing has effect -->
+    <!-- relative, the top/botoom/left/right/z will work,otherwise the element is in the flow,rest elements stay same 
+    they remain unaffected by the movement and may get covered,relative as in relative to where it was
+    absolute:element is removed from flow and positioned relative to its first non static parent member(this may end up being html, now top and
+    bottom might work according to the whole html page), doing this will cause later elements to act like this element was not there in the first place
+    fixed:positioning will now be relative to the browser window,put this element inside a very big window which is scrollable, it wont move.(can be used for a chat with us prompt at the bottom of screen)
+    sticky:The element will scroll along with its container, until it is at the top of the container (or reaches the offset specified in top), and will then stop scrolling, so it stays visible.(can be used to keep the navbar up)
+        when using stick you have to specify some property like top etc which says where the element will be when you move down
+        if you dont do this the element will be scrolled away. Sticky will keep the element on top always.
+    zindex:scrolling the page will keep the navbar on top but the rest of the elements may start to come on top of navbar
+    ,z index solves this, whichever element has the highest z index is always on top. It only works if the position of the element to which you apply z-index is relative, otherwise has no effect
+
+    An element with relative positioning will always scroll over an element without relative(doesnt matter if sticky navbar)
+    -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur quas quos corrupti cupiditate, atque voluptatum, tempore laudantium delectus adipisci fugiat. Exercitationem consequuntur maxime, aut enim alias quibusdam, explicabo reiciendis possimus vero, culpa eligendi.
+        </p>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box2">
+            i am the box 2
+        </div>
+        <div class="box3">
+            I am the box 3
+        </div>
+    </div>
+</body>
+</html>

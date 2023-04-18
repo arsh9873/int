@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.blue{
+    background-color: rgba(10, 10, 198, 0.804);
+}
+.red{
+    background: rgba(154, 33, 33, 0.866);
+}
+body{
+    background-image:url('goat.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.container{
+    color:antiquewhite;
+    margin-left:0;
+    height:400px;
+    width: 1000px;
+    /* border:5px solid blue; */
+    background-color: red;
+    background-image: url('messi.jpg');
+    /* background-repeat:no-repeat; */
+    background-size:contain;
+    background-position: center;
+    background-attachment:scroll;
+    
+     /* background: red url('messi.jpg') repeat-x scroll top center;background shorthand */
+}
+/* local vs scroll is for andar ka contenct, local moves with andar ka content as well */
+/* image is by def repeated in both x and y axis */
+/* background: color url repat attachment position */

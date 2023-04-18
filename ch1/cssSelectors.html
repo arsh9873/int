@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h3{
+            color:red;
+        }
+        div{
+            background-color: antiquewhite;
+        }
+        .sp{
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+    </style>
+</head> <!--inline > internal and external-->
+<!-- if link comes after internal style tag, link followed and vice versa -->
+<!-- between internal and link whichever comes last is followed -->
+<!-- this later coming thing follows the order in which i wrote the selectors inside the style thing -->
+<!-- it doesnt matter how i wrote the class order inside the element eg div class="red blue" -->
+<!-- here red before blue doesnt matter what matters is which order red or blue came last in the style tag -->
+<body>
+    <div>
+        <h1>my css selector page</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur quas cupiditate commodi possimus dolores placeat, repudiandae eveniet eius debitis, architecto natus ipsam nam unde labore, libero totam dolore vero illo ducimus! Eos, velit.
+        </p>
+        <span class="sp">first</span>
+        <span class="sp">second</span>
+        <span class="sp">third</span>
+        <h3>this is h3</h3>
+    </div>
+</body>
+</html>

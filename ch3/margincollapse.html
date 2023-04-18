@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- when 2 margins from diff elements collapse, the equivalent margin is the greater of the 2 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin collapse</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        .box1{
+            background-color: red;
+            margin-bottom:  30px;
+            height:2500px;
+            width: 250px;
+        }
+        .box2{
+            height:200px;
+            width: 100%;
+            /* margin:20px 0 20px 0; */
+            background-color: aqua;
+            border:40px solid yellow;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate rem nulla pariatur voluptas, necessitatibus sunt asperiores iure hic illo saepe eveniet soluta! Doloribus sapiente neque fugit laudantium corporis tempore fugiat cum sed quaerat hic.
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur
+    </div>
+    </div>
+</body>
+</html>

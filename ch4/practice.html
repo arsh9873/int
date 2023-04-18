@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            display: block;
+            border: 5px solid blue;
+            box-sizing: border-box;
+        }
+        .navbar ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:30px;
+        }   
+        /* this means only navbar's ul's li's a should have this */
+        .navbar ul li{
+            display: inline-block;
+            margin:0 200px;
+        } 
+        h2,
+        h3 {
+            font-family: ubuntu;
+            text-align: center;
+        }
+
+        .fonto {
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .green {
+            width: 50%;
+            height: 2000px;
+            display: inline-block;
+            background-color: green;
+            color: white;
+        }
+
+        .red {
+            width: 50%;
+            height: 2000px;
+            display: inline-block;
+            background-color: red;
+            color: white;
+        }
+        footer{
+            background-color: rgba(69, 181, 219, 0.792);
+            color:rgb(255, 68, 1);
+            /* box-sizing: border-box; */
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="green">
+        <h2>content 1</h2>
+    </div><div class="red">
+        <!--pay close attention here, if i dont put a div right after first one ends then some space left-->
+        <h2>content 2</h2>
+    </div>
+    <footer>
+        <h3 class="fonto">copyright &copy;</h3>
+    </footer>
+</body>
+
+</html>
